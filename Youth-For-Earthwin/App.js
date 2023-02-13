@@ -10,6 +10,7 @@ import {
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text style={{fontSize: 65}}>Earthwin </Text>
       <Image
         source={{uri: 'https://picsum.photos/200'}}
         style={{width: 200, height: 200}}
