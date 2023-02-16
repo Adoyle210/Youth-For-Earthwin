@@ -41,7 +41,7 @@ const Login = () => {
         style={{width: 200, height: 200, marginBottom: 10, borderRadius: 50}}
       />
       <TextInput style={{height: 40, textAlign: 'center', width: 200, borderColor: 'gray', borderWidth: 1, marginBottom:.5, borderRadius: 5}} placeholder="Username" onChangeText={handleUsername} value={username} />
-      <TextInput style={{height: 40, textAlign: 'center', width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 20, borderRadius: 5}} placeholder="Password" onChangeText={handlePassword} value={password}/>
+      <TextInput style={{height: 40, textAlign: 'center', width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 20, borderRadius: 5}} placeholder="Password" onChangeText={handlePassword} value={password} secureTextEntry={true}/>
       <StatusBar style="auto" />
       <TouchableOpacity style={{backgroundColor: 'green', width: 100, height: 40, alignItems: 'center', justifyContent: 'center', borderRadius: 50}} onPress={handleLogin}>
         <Text style={{color: 'white'}}>Log in</Text>
