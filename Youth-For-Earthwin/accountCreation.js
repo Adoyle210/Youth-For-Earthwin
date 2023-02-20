@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Button, TextInput } from 'react-native';
+import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 function AccountCreation() {
@@ -12,13 +12,13 @@ function AccountCreation() {
         title="Back to Login"
         onPress={() => navigation.navigate('Login')}
       />
-      <TextInput style={{height: 40, textAlign: 'center', width: 350, borderColor: 'gray', borderWidth: 1, marginBottom: 10, borderRadius: 5}} placeholder="First Name" />
-      <TextInput style={{height: 40, textAlign: 'center', width: 350, borderColor: 'gray', borderWidth: 1, marginBottom:10, borderRadius: 5}} placeholder="Last Name" />
-      <TextInput style={{height: 40, textAlign: 'center', width: 350, borderColor: 'gray', borderWidth: 1, marginBottom:10, borderRadius: 5}} placeholder="Username" />
-      <TextInput style={{height: 40, textAlign: 'center', width: 350, borderColor: 'gray', borderWidth: 1, marginBottom: 10, borderRadius: 5}} placeholder="Password" secureTextEntry={true}/>
-      <TextInput style={{height: 40, textAlign: 'center', width: 350, borderColor: 'gray', borderWidth: 1, marginBottom: 10, borderRadius: 5}} placeholder="Confirm Password" secureTextEntry={true}/>
-      <TextInput style={{height: 40, textAlign: 'center', width: 350, borderColor: 'gray', borderWidth: 1, marginBottom: 10, borderRadius: 5}} placeholder="Email" />
-      <TextInput style={{height: 40, textAlign: 'center', width: 350, borderColor: 'gray', borderWidth: 1, marginBottom: 10, borderRadius: 5}} placeholder="Phone Number" />
+      <TextInput style={styles.textInput} placeholder="First Name" />
+      <TextInput style={styles.textInput} placeholder="Last Name" />
+      <TextInput style={styles.textInput} placeholder="Username" />
+      <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true}/>
+      <TextInput style={styles.textInput} placeholder="Confirm Password" secureTextEntry={true}/>
+      <TextInput style={styles.textInput} placeholder="Email" />
+      <TextInput style={styles.textInput} placeholder="Phone Number" />
       <Button
         title="Create Account"
         onPress={() => navigation.navigate('Login')}
@@ -26,5 +26,17 @@ function AccountCreation() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  textInput: {
+    height: 40,
+    textAlign: 'center',
+    width: 350,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginBottom: 10,
+    borderRadius: 5
+  }
+});
 
 export default AccountCreation;
