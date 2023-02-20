@@ -8,10 +8,12 @@ function AccountCreation() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Create an account</Text>
-      <Button
-        title="Back to Login"
-        onPress={() => navigation.navigate('Login')}
-      />
+      <View style={styles.backButton} >
+        <Button
+          title="Back to Login"
+          onPress={() => navigation.navigate('Login')}
+        />
+      </View>
       <TextInput style={styles.textInput} placeholder="First Name" />
       <TextInput style={styles.textInput} placeholder="Last Name" />
       <TextInput style={styles.textInput} placeholder="Username" />
@@ -36,6 +38,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 10,
     borderRadius: 5
+  },
+  backButton: {
+    width: 100,
+    position: 'absolute',
+    top: 10,
+    left: 10
   }
 });
 
