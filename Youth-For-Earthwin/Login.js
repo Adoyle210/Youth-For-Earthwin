@@ -7,8 +7,10 @@ import {
   TextInput, 
   Image,
   // Font, 
-  TouchableOpacity 
+  TouchableOpacity,
+  Button 
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const styles = StyleSheet.create({
   container: {
@@ -31,8 +33,9 @@ const Login = () => {
   }
   const handleLogin = () => {
     console.log(`Username: ${username} Password: ${password}`);
-}
-
+  }
+  const navigation = useNavigation();
+  
   return (
     <View style={styles.container}>
       <Text style={{ fontSize: 65, marginBottom: 10}}>Earthwin</Text>
@@ -47,6 +50,10 @@ const Login = () => {
         <Text style={{color: 'white'}}>Log in</Text>
       </TouchableOpacity>
       <Text style={{marginTop: 15}}>Forgot password?</Text>
+      <Button
+        title="Create an Account"
+        onPress={() => navigation.navigate('AccountCreation')}
+      />
 
     </View>
   );

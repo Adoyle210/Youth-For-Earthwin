@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import Login from './Login.js';
+import AccountCreation from './AccountCreation.js';
 import { 
   StyleSheet, 
   Text, 
@@ -10,6 +11,10 @@ import {
   // Font, 
   TouchableOpacity 
 } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 // TODO - Add fonts
 // const fetchFonts = () => {
@@ -21,9 +26,12 @@ import {
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Login />
-    </View>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="AccountCreation" component={AccountCreation} />
+          </Stack.Navigator>
+        </NavigationContainer>    
   );
 }
 
