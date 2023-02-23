@@ -11,6 +11,7 @@ import {
   Button 
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import axios from 'axios'; //added for backend things
 
 const styles = StyleSheet.create({
   container: {
@@ -33,6 +34,12 @@ const Login = () => {
   }
   const handleLogin = () => {
     console.log(`Username: ${username} Password: ${password}`);
+    axios.post('http://localhost:30000/login',{username:username, password:password})
+    .then(data=>{
+      console.log(data.data)
+      
+    })
+    .catch(error=>console.log(error.response.data))
   }
   const navigation = useNavigation();
   

@@ -19,5 +19,7 @@ Commit changes to head (but not yet to the remote repository):
     git commit -m "Commit message"
 
 
+to start things:
+    npx expo start --tunnel
 
  
