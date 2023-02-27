@@ -8,10 +8,17 @@ const ForgotPassword = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Forgot Password</Text>
+      <View style={styles.header}>
+        <Text style={styles.title}>Forgot your password?</Text>
+      </View>
+      <Text style={styles.subheader}>Enter your email address below and we'll send you a link to reset your password.</Text>
+      <TextInput style={styles.ACInput} placeholder="Email" />
+      <TouchableOpacity style={styles.submitButton}>
+        <Text style={{color: 'white'}}>Submit</Text>
+      </TouchableOpacity>
       <TouchableOpacity
         onPress={() => navigation.navigate("Login")}>
-        <Text>Go to Login</Text>
+        <Text>Back to Login</Text>
       </TouchableOpacity>
     </View>
   );
