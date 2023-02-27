@@ -11,24 +11,7 @@ import {
   Button 
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  inputBox: {
-    height: 40, 
-    textAlign: 'center', 
-    width: 200, 
-    borderColor: 'gray', 
-    borderWidth: 1, 
-    marginBottom:.5, 
-    borderRadius: 5
-  }
-});
+import styles from './styles.js';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -67,7 +50,6 @@ const Login = () => {
         title="Create an Account"
         onPress={() => navigation.navigate('AccountCreation')}
       />
-
     </View>
   );
 }
