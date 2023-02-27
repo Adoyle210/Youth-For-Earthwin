@@ -19,6 +19,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  inputBox: {
+    height: 40, 
+    textAlign: 'center', 
+    width: 200, 
+    borderColor: 'gray', 
+    borderWidth: 1, 
+    marginBottom:.5, 
+    borderRadius: 5
+  }
 });
 
 const Login = () => {
@@ -43,8 +52,8 @@ const Login = () => {
         source={{uri: 'https://picsum.photos/200'}}
         style={{width: 200, height: 200, marginBottom: 10, borderRadius: 50}}
       />
-      <TextInput style={{height: 40, textAlign: 'center', width: 200, borderColor: 'gray', borderWidth: 1, marginBottom:.5, borderRadius: 5}} placeholder="Username" onChangeText={handleUsername} value={username} />
-      <TextInput style={{height: 40, textAlign: 'center', width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 20, borderRadius: 5}} placeholder="Password" onChangeText={handlePassword} value={password} secureTextEntry={true}/>
+      <TextInput style={styles.inputBox} placeholder="Username" onChangeText={handleUsername} value={username} />
+      <TextInput style={styles.inputBox} placeholder="Password" onChangeText={handlePassword} value={password} secureTextEntry={true}/>
       <StatusBar style="auto" />
       <TouchableOpacity style={{backgroundColor: 'green', width: 100, height: 40, alignItems: 'center', justifyContent: 'center', borderRadius: 50}} onPress={handleLogin}>
         <Text style={{color: 'white'}}>Log in</Text>

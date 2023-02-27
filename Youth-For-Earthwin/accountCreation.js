@@ -22,7 +22,7 @@ function AccountCreation() {
       <TextInput style={styles.textInput} placeholder="Email" />
       <TextInput style={styles.textInput} placeholder="Phone Number" />
       <Button
-        title="Create Account"
+        title="Submit"
         onPress={() => navigation.navigate('Login')}
       />
     </View>
