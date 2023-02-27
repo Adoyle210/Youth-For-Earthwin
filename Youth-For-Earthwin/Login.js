@@ -60,6 +60,10 @@ const Login = () => {
       </TouchableOpacity>
       <Text style={{marginTop: 15}}>Forgot password?</Text>
       <Button
+        title="Forgot Password"
+        onPress={() => navigation.navigate('ForgotPassword')}
+      />
+      <Button
         title="Create an Account"
         onPress={() => navigation.navigate('AccountCreation')}
       />

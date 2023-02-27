@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import Login from './Login.js';
+import ForgotPassword from './ForgotPassword.js';
 import AccountCreation from './AccountCreation.js';
 import { 
   StyleSheet, 
@@ -13,6 +14,7 @@ import {
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import styles from './styles.js';
 
 const Stack = createStackNavigator();
 
@@ -30,16 +32,8 @@ export default function App() {
           <Stack.Navigator>
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="AccountCreation" component={AccountCreation} />
+            <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
           </Stack.Navigator>
         </NavigationContainer>    
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
