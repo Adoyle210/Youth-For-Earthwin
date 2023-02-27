@@ -41,7 +41,6 @@ const Login = () => {
       <TouchableOpacity style={{backgroundColor: 'green', width: 100, height: 40, alignItems: 'center', justifyContent: 'center', borderRadius: 50}} onPress={handleLogin}>
         <Text style={{color: 'white'}}>Log in</Text>
       </TouchableOpacity>
-      <Text style={{marginTop: 15}}>Forgot password?</Text>
       <Button
         title="Forgot Password"
         onPress={() => navigation.navigate('ForgotPassword')}
