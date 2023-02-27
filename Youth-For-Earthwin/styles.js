@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     width: 200, 
     borderColor: 'gray', 
     borderWidth: 1, 
-    marginBottom:.5, 
+    marginBottom: 5, 
     borderRadius: 5
   },
   ACInput: {
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 50,
-    marginBottom: 10
+    marginBottom: 10,
+    marginTop: 10
   },
   backButton: {
     width: 100,
