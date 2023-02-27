@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import styles from './styles.js'
 
 function AccountCreation() {
   const navigation = useNavigation();
@@ -14,13 +15,13 @@ function AccountCreation() {
           onPress={() => navigation.navigate('Login')}
         />
       </View>
-      <TextInput style={styles.textInput} placeholder="First Name" />
-      <TextInput style={styles.textInput} placeholder="Last Name" />
-      <TextInput style={styles.textInput} placeholder="Username" />
-      <TextInput style={styles.textInput} placeholder="Password" secureTextEntry={true}/>
-      <TextInput style={styles.textInput} placeholder="Confirm Password" secureTextEntry={true}/>
-      <TextInput style={styles.textInput} placeholder="Email" />
-      <TextInput style={styles.textInput} placeholder="Phone Number" />
+      <TextInput style={styles.ACInput} placeholder="First Name" />
+      <TextInput style={styles.ACInput} placeholder="Last Name" />
+      <TextInput style={styles.ACInput} placeholder="Username" />
+      <TextInput style={styles.ACInput} placeholder="Password" secureTextEntry={true}/>
+      <TextInput style={styles.ACInput} placeholder="Confirm Password" secureTextEntry={true}/>
+      <TextInput style={styles.ACInput} placeholder="Email" />
+      <TextInput style={styles.ACInput} placeholder="Phone Number" />
       <Button
         title="Submit"
         onPress={() => navigation.navigate('Login')}
@@ -28,23 +29,5 @@ function AccountCreation() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  textInput: {
-    height: 40,
-    textAlign: 'center',
-    width: 350,
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginBottom: 10,
-    borderRadius: 5
-  },
-  backButton: {
-    width: 100,
-    position: 'absolute',
-    top: 10,
-    left: 10
-  }
-});
 
 export default AccountCreation;
