@@ -38,16 +38,16 @@ const Login = () => {
       <TextInput style={styles.inputBox} placeholder="Username" onChangeText={handleUsername} value={username} />
       <TextInput style={styles.inputBox} placeholder="Password" onChangeText={handlePassword} value={password} secureTextEntry={true}/>
       <StatusBar style="auto" />
-      <TouchableOpacity style={{backgroundColor: 'green', width: 100, height: 40, alignItems: 'center', justifyContent: 'center', borderRadius: 50}} onPress={handleLogin}>
+      <TouchableOpacity style={styles.submitButton} onPress={handleLogin}>
         <Text style={{color: 'white'}}>Log in</Text>
       </TouchableOpacity>
       <Button
         title="Forgot Password"
-        onPress={() => navigation.navigate('ForgotPassword')}
+        onPress={() => navigation.navigate('ForgotPassword')}     // TODO: Edit styling
       />
       <Button
         title="Create an Account"
-        onPress={() => navigation.navigate('AccountCreation')}
+        onPress={() => navigation.navigate('AccountCreation')}    // TODO: Edit styling
       />
     </View>
   );
