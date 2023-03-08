@@ -6,6 +6,13 @@ import styles from "./styles.js";
 class ProjectOverview extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      projects: []
+    }
   }
+
+  
 }
+
+
 
