@@ -43,8 +43,12 @@ class ProjectOverview extends React.Component {
 
         {projects.length > 0  ? (
           <FlatList
-          data={projects}
-          renderItem={({item}) => <Text>{item.key}</Text>}
+            data={projects}
+            renderItem={({item}) => (
+              <View style={styles.projectBox}>
+                <Text>{item.key}</Text>
+              </View>
+            )}
           />
         ) : (
           <Text>No projects</Text>
