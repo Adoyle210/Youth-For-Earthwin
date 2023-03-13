@@ -74,6 +74,19 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
+  projectBox: {
+    width: 350,
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 5,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: '#333',
+    padding: 10,
+    marginVertical: 5,
+    borderRadius: 5,
+  },
 })
 
 export default styles;
