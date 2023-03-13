@@ -49,7 +49,7 @@ class ProjectOverview extends React.Component {
         ) : (
           <Text>No projects</Text>
         )}
-        <TouchableOpacity onPress={this.handleNewProject} style={styles.submitButton}>
+        <TouchableOpacity onPress={this.handleNewProject} style={styles.addButton}>
           <Text style={styles.submitButtonText}>New Project</Text>
         </TouchableOpacity>
       </View>
