@@ -33,11 +33,25 @@ class ProjectOverview extends React.Component {
   }
 
   render() {
+    const { projects } = this.state;
+
     return (
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.title}>Project Overview</Text>
         </View>
+
+        {projects.length > 0  ? (
+          <FlatList
+          data={projects}
+          renderItem={({item}) => <Text>{item.key}</Text>}
+          />
+        ) : (
+          <Text>No projects</Text>
+        )}
+        <TouchableOpacity onPress={this.handleNewProject} style={styles.submitButton}>
+          <Text style={styles.submitButtonText}>New Project</Text>
+        </TouchableOpacity>
       </View>
     )
   }
