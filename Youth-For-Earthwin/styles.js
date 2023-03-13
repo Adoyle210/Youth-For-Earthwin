@@ -47,14 +47,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   addButton: {
-    backgroundColor: 'green',
-    width: 125,
-    height: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 50,
-    marginBottom: 10,
-    marginTop: 10
+    position: 'absolute',
+    bottom: 50,
+    right: 30,
+    backgroundColor: 'teal',
+    padding: 10,
+    borderRadius: 5,
   },
   header: {
     backgroundColor: 'green',
@@ -87,6 +85,12 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     borderRadius: 5,
   },
+  content: {
+    marginTop: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
 })
 
 export default styles;

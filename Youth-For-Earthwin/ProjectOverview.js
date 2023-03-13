@@ -40,19 +40,20 @@ class ProjectOverview extends React.Component {
         <View style={styles.header}>
           <Text style={styles.title}>Project Overview</Text>
         </View>
-
-        {projects.length > 0  ? (
-          <FlatList
-            data={projects}
-            renderItem={({item}) => (
-              <View style={styles.projectBox}>
-                <Text>{item.key}</Text>
-              </View>
+          <View style={styles.content}>
+            {projects.length > 0  ? (
+              <FlatList
+                data={projects}
+                renderItem={({item}) => (
+                  <View style={styles.projectBox}>
+                    <Text>{item.key}</Text>
+                  </View>
+                )}
+              />
+            ) : (
+              <Text>No projects</Text>
             )}
-          />
-        ) : (
-          <Text>No projects</Text>
-        )}
+          </View>
         <TouchableOpacity onPress={this.handleNewProject} style={styles.addButton}>
           <Text style={styles.submitButtonText}>New Project</Text>
         </TouchableOpacity>
