@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Alert, StyleSheet, View } from 'react-native'
 import { supabase } from '../config/supabase'
 import { Button, Input } from 'react-native-elements'
+import "react-native-url-polyfill/auto"
 
 export default function Auth() {
   const [email, setEmail] = useState('')
@@ -15,8 +16,12 @@ export default function Auth() {
       email: email,
       password: password,
     })
-
-    if (error) Alert.alert(error.message)
+    console.log("Testing1...")
+    if (error){ Alert.alert(error.message)
+        console.log(error.message)
+        console.log(error.cause)
+    }
+    console.log("Testing2...")
     setLoading(false)
   }
 
