@@ -16,20 +16,23 @@ export default function Account({ session }: { session: Session }) {
     if (session) getProfile()
   }, [session])
 
+  // get info from user's profile to autofill for Account page.
   async function getProfile() {
     try {
       setLoading(true)
       if (!session?.user) throw new Error('No user on the session!')
 
+      //Slightly more traditional query
       let { data, error, status } = await supabase
-        .from('profiles')
-        .select(`username, website, avatar_url`)
-        .eq('id', session?.user.id)
-        .single()
-      if (error && status !== 406) {
+        .from('profiles')                           // Table we're getting data from (SELECT * FROM 'profiles')             
+        .select(`username, website, avatar_url`)    // Data we want                  (SELECT username, website, avatar_url FROM 'profiles')
+        .eq('id', session?.user.id)                 // Column is equal to...         (SELECT username, website, avatar_url FROM 'profiles' WHERE 'id' IS session?.user.id)
+        .single()                                   // Select only 1                 (SELECT username, website, avatar_url FROM 'profiles' WHERE 'id' IS session?.user.id LIMIT 1)
+      
+        if (error && status !== 406) {
         throw error
       }
-
+      //If our request returned successfully, set all the fields to be what was returned from the query
       if (data) {
         setUsername(data.username)
         setWebsite(data.website)
@@ -44,6 +47,7 @@ export default function Account({ session }: { session: Session }) {
     }
   }
 
+  // update data for account page
   async function updateProfile({
     username,
     website,
