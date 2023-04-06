@@ -12,10 +12,13 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import styles from './styles.js';
+import supabase from './supabase.js';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  
 
   const handleUsername = (text) => {
     setUsername(text);
