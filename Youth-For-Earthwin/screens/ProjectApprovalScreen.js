@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-export default function App() {
+
+const ProjectApprovalPage = () =>{
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -96,5 +97,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   projectProgressTitle: {
-    fontSize:
-  }
+    fontSize: 40
+  },
+
+});
+
+export default ProjectApprovalPage;
+
+

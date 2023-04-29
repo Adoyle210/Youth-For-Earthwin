@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
 const StudentProfile = () => {
-  const [profilePicture, setProfilePicture] = useState(require('./default-profile-picture.jpg'));
+  // const [profilePicture, setProfilePicture] = useState(require('./default-profile-picture.jpg'));
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Student Profile Page</Text>
-      <TouchableOpacity onPress={() => setProfilePicture(require('./new-profile-picture.jpg'))}>
+      {/* <TouchableOpacity onPress={() => setProfilePicture(require('./new-profile-picture.jpg'))}>
         <Image source={profilePicture} style={styles.profilePicture} />
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <View style={styles.profileInfo}>
         <Text style={styles.name}>Student Name</Text>
         <Text style={styles.school}>School Name</Text>
