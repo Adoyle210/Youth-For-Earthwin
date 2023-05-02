@@ -17,6 +17,7 @@ import ProjectPitch from './screens/ProjectPitch';
 import ProjectOverview from './ProjectOverview';
 import ParentProfile from './screens/ParentProfile';
 import StudentProfile from './screens/StudentProfile';
+import ForgotPassword from './ForgotPassword';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,6 +50,7 @@ export default function App() {
           <Stack.Screen name="Parent Profile" component={ParentProfile} />
           <Stack.Screen name="Student Profile" component={StudentProfile} />
           <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen name="Forgot Password" component={ForgotPassword} />
         </Stack.Navigator> */}
       </SafeAreaView>
     </NavigationContainer>
