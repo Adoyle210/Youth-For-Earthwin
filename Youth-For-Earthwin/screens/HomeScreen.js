@@ -1,12 +1,16 @@
 import React from "react";
-import { Button, View, Text, StyleSheet } from "react-native";
+import {View, Text, StyleSheet} from "react-native";
 import Menu from '../components/Menu';
+import Profile from "../components/profile";
 
 
 const HomeScreen = ({navigation}) => {
     return (
         <View style={styles.mainContainer}>
             <View style={styles.homeTop}>
+                <View style={styles.ProfileStyle}>
+                    <Profile/>
+                </View>
                 <Text style={styles.mainHeader}>Home Screen</Text>
                 {/* <Button title="Go to Details" onPress={() => navigation.navigate('Details')}/>
                 <Button title="Go to Project Approval" onPress={() => navigation.navigate('Project Approval')}/>
@@ -46,12 +50,20 @@ const styles = StyleSheet.create({
         color: "#344055",
         textTransform: "uppercase",
         fontFamily: "Nunito_600SemiBold",
+        // fontWeight: 'bold',
+    },
+    textstyle: {
+        fontSize: 20,
+        color: "#344055",
     },
     lineStyle: {
         marginBottom: 10,
         borderWidth: 0.5,
         borderColor: "grey",
     },
+    ProfileStyle: {
+        alignSelf: 'flex-end',
+    }
 });
 
 export default HomeScreen;

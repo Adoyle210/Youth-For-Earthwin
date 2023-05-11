@@ -7,6 +7,7 @@ import DetailsScreen from '../screens/DetailsScreen';
 import ParentProfileScreen from '../screens/ParentProfile';
 import ProjectPitch from '../screens/ProjectPitch';
 import ProjectApprovalScreen from '../screens/ProjectApprovalScreen';
+import StudentProfile from '../screens/StudentProfile';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Project Pitch" component={ProjectPitch} />
         <Stack.Screen name="Project Approval" component={ProjectApprovalScreen} />
+        <Stack.Screen name='Student Profile' component={StudentProfile} />
 
       </Stack.Navigator>
     </NavigationContainer>
