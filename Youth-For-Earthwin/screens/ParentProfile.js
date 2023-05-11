@@ -60,46 +60,46 @@ const ParentProfileScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#E6E2D3",
-  },
-  header: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    backgroundColor: "#96b885",
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-  },
-  headerText: {
-    color: "#fff",
-    fontSize: 24,
-  },
-  navButton: {
-    backgroundColor: "#96b885",
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: 5,
-  },
-  navButtonText: {
-    color: "#fff",
-    fontSize: 16,
-  },
-  parentProfile: {
-    padding: 40,
-    alignItems: "center",
-  },
-  profilePictureContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  profilePicture: {
-    width: 200,
-    height: 200,
-    borderRadius: 100
-  }
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: "#E6E2D3",
+//   },
+//   header: {
+//     flexDirection: "row",
+//     alignItems: "center",
+//     justifyContent: "space-between",
+//     backgroundColor: "#96b885",
+//     paddingVertical: 10,
+//     paddingHorizontal: 20,
+//   },
+//   headerText: {
+//     color: "#fff",
+//     fontSize: 24,
+//   },
+//   navButton: {
+//     backgroundColor: "#96b885",
+//     paddingVertical: 5,
+//     paddingHorizontal: 10,
+//     borderRadius: 5,
+//   },
+//   navButtonText: {
+//     color: "#fff",
+//     fontSize: 16,
+//   },
+//   parentProfile: {
+//     padding: 40,
+//     alignItems: "center",
+//   },
+//   profilePictureContainer: {
+//     flexDirection: "row",
+//     alignItems: "center",
+//   },
+//   profilePicture: {
+//     width: 200,
+//     height: 200,
+//     borderRadius: 100
+//   }
+// });
 
 export default ParentProfileScreen

@@ -64,44 +64,44 @@ const ProjectApprovalScreen = () =>{
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#E6E2D3',
-  },
-  header: {
-    backgroundColor: '#96b885',
-    color: '#fff',
-    textAlign: 'center',
-    padding: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  headerText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  nav: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  navLink: {
-    marginLeft: 20,
-  },
-  navText: {
-    color: '#fff',
-    textDecorationLine: 'underline',
-  },
-  projectProgress: {
-    paddingVertical: 40,
-    paddingHorizontal: 20,
-  },
-  projectProgressTitle: {
-    fontSize: 40
-  },
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#E6E2D3',
+//   },
+//   header: {
+//     backgroundColor: '#96b885',
+//     color: '#fff',
+//     textAlign: 'center',
+//     padding: 10,
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     justifyContent: 'space-between',
+//   },
+//   headerText: {
+//     fontSize: 24,
+//     fontWeight: 'bold',
+//   },
+//   nav: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//   },
+//   navLink: {
+//     marginLeft: 20,
+//   },
+//   navText: {
+//     color: '#fff',
+//     textDecorationLine: 'underline',
+//   },
+//   projectProgress: {
+//     paddingVertical: 40,
+//     paddingHorizontal: 20,
+//   },
+//   projectProgressTitle: {
+//     fontSize: 40
+//   },
 
-});
+// });
 
 export default ProjectApprovalScreen;
 
