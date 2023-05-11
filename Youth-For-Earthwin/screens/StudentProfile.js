@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import { styles } from 'react-native';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
 const StudentProfile = () => {
@@ -43,8 +44,9 @@ const StudentProfile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E6E2D3',
-    padding: 20,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
     fontSize: 36,
@@ -85,7 +87,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 16,
-    color: '#ffffff',
+    color: '#E6E2D3',
     textAlign: 'center',
   },
 });

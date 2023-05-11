@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 
-const UserProfile = () => {
+const ProjectPitch = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [objectives, setObjectives] = useState('');
@@ -75,11 +75,13 @@ const UserProfile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E6E2D3',
+    backgroundColor: '#fff',
+    alighnItems: 'center',
     padding: 20,
   },
   title: {
     fontSize: 24,
+    alighnItems: 'center',
     fontWeight: 'bold',
     marginBottom: 20,
   },
@@ -112,6 +114,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  backButton: {
+    width: 100,
+    position: 'absolute',
+    top: 10,
+    left: 10,
+  }
 });
 
-export default UserProfile;
+export default ProjectPitch;

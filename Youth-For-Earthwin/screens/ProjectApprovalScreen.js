@@ -1,8 +1,10 @@
 import React from 'react';
+// import { styles } from 'react-native';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+// import styles from '../styles.js';
 
 
-const ProjectApprovalPage = () =>{
+const ProjectApprovalScreen = () =>{
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -11,9 +13,9 @@ const ProjectApprovalPage = () =>{
           <TouchableOpacity style={styles.navLink}>
             <Text style={styles.navText}>Connect With Parents</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.navLink}>
+          {/* <TouchableOpacity style={styles.navLink}>
             <Text style={styles.navText}>Logout</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
 
@@ -66,7 +68,9 @@ const ProjectApprovalPage = () =>{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E6E2D3',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   header: {
     backgroundColor: '#96b885',
@@ -102,6 +106,6 @@ const styles = StyleSheet.create({
 
 });
 
-export default ProjectApprovalPage;
+export default ProjectApprovalScreen;
 
 
