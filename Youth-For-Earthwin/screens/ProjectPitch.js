@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 
-const UserProfile = () => {
+const ProjectPitch = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [objectives, setObjectives] = useState('');
@@ -114,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default UserProfile;
+export default ProjectPitch;

@@ -9,10 +9,10 @@ import {
   Button,
   Alert,
 } from 'react-native';
-import { supabase } from '../supabase';
+import  supabase  from '../supabase';
 import styles from '../styles.js';
 
-const Login = () => {
+const Login = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -31,9 +31,13 @@ const Login = () => {
       email: email,
       password: password,
     });
-
-    if (error) Alert.alert(error.message);
     setLoading(false);
+    if (error) {
+      Alert.alert(error.message);
+    } else {
+      navigation.navigate('Home');
+    }
+    
   }
 
   async function signUpWithEmail() {
