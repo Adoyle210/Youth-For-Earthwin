@@ -1,4 +1,5 @@
 import React from 'react';
+import { styles } from 'react-native';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const ParentProfileScreen = () => {

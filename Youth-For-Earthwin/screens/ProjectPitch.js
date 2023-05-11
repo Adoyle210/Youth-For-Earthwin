@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { styles } from 'react-native';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 
 const UserProfile = () => {
