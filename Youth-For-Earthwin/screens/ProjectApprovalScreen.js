@@ -1,6 +1,7 @@
 import React from 'react';
 // import { styles } from 'react-native';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+// import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+// import styles from '../styles.js';
 
 
 const ProjectApprovalScreen = () =>{
