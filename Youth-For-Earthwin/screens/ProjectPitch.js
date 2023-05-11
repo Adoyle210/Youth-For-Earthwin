@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { styles } from 'react-native';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 
 const ProjectPitch = () => {
@@ -73,46 +72,54 @@ const ProjectPitch = () => {
   );
 };
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#E6E2D3',
-//     padding: 20,
-//   },
-//   title: {
-//     fontSize: 24,
-//     fontWeight: 'bold',
-//     marginBottom: 20,
-//   },
-//   formContainer: {
-//     maxWidth: 800,
-//     alignSelf: 'center',
-//   },
-//   label: {
-//     fontWeight: 'bold',
-//     marginTop: 20,
-//   },
-//   input: {
-//     borderWidth: 2,
-//     borderColor: '#96b885',
-//     borderRadius: 5,
-//     padding: 10,
-//     marginTop: 5,
-//     fontSize: 16,
-//     textAlignVertical: 'top',
-//   },
-//   button: {
-//     backgroundColor: '#96b885',
-//     borderRadius: 5,
-//     padding: 10,
-//     marginTop: 20,
-//     alignSelf: 'center',
-//   },
-//   buttonText: {
-//     color: 'white',
-//     fontWeight: 'bold',
-//     textAlign: 'center',
-//   },
-// });
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alighnItems: 'center',
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    alighnItems: 'center',
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  formContainer: {
+    maxWidth: 800,
+    alignSelf: 'center',
+  },
+  label: {
+    fontWeight: 'bold',
+    marginTop: 20,
+  },
+  input: {
+    borderWidth: 2,
+    borderColor: '#96b885',
+    borderRadius: 5,
+    padding: 10,
+    marginTop: 5,
+    fontSize: 16,
+    textAlignVertical: 'top',
+  },
+  button: {
+    backgroundColor: '#96b885',
+    borderRadius: 5,
+    padding: 10,
+    marginTop: 20,
+    alignSelf: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  backButton: {
+    width: 100,
+    position: 'absolute',
+    top: 10,
+    left: 10,
+  }
+});
 
 export default ProjectPitch;
