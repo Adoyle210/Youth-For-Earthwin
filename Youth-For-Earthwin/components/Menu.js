@@ -18,6 +18,9 @@ const Menu = () => {
             <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Login")}>
                 <Text> Login </Text>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Template Project")}>
+                <Text> Template Project </Text>
+            </TouchableOpacity>
         </View>
     );
 };

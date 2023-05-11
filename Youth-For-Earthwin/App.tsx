@@ -16,6 +16,8 @@ import ProjectPitch from './screens/ProjectPitch';
 import ProjectOverview from './ProjectOverview';
 import ParentProfile from './screens/ParentProfile';
 import StudentProfile from './screens/StudentProfile';
+import TemplateProject from './screens/IdlingProj/Idling1';
+import Idling2 from './screens/IdlingProj/Idling2';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,7 +42,7 @@ export default function App() {
         ) : (
           <LoginScreen />
         )}
-        {/* <Stack.Navigator initialRouteName="Home">     
+        <Stack.Navigator initialRouteName="Home">     
           <Stack.Screen name="Home" component={HomeScreen}/>
           <Stack.Screen name="Details" component={DetailsScreen}/>
           <Stack.Screen name="Project Approval" component={ProjectApprovalScreen}/>
@@ -48,7 +50,9 @@ export default function App() {
           <Stack.Screen name="Parent Profile" component={ParentProfile} />
           <Stack.Screen name="Student Profile" component={StudentProfile} />
           <Stack.Screen name="Login" component={LoginScreen} />
-        </Stack.Navigator> */}
+          <Stack.Screen name="Template Project" component={TemplateProject} />
+          <Stack.Screen name="Idling2" component={Idling2} />
+        </Stack.Navigator>
       </SafeAreaView>
     </NavigationContainer>
   );
@@ -59,7 +63,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
 });

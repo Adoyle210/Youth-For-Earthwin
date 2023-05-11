@@ -9,7 +9,7 @@ import {
   Button,
   Alert,
 } from 'react-native';
-import { supabase } from '../supabase';
+import { supabase } from '../config/supabase';
 import styles from '../styles.js';
 
 const Login = () => {
