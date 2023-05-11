@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { styles } from 'react-native';
+// import { styles } from 'react-native';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
 const StudentProfile = () => {
@@ -41,54 +41,55 @@ const StudentProfile = () => {
   );
 };
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#FFFFFF',
-//     padding: 20,
-//   },
-//   title: {
-//     fontSize: 36,
-//     textAlign: 'center',
-//     marginTop: 20,
-//   },
-//   profilePicture: {
-//     width: 150,
-//     height: 150,
-//     borderRadius: 75,
-//     backgroundColor: '#96b885',
-//     alignSelf: 'center',
-//     marginVertical: 50,
-//   },
-//   profileInfo: {
-//     alignItems: 'center',
-//     marginBottom: 30,
-//   },
-//   name: {
-//     fontSize: 24,
-//   },
-//   school: {
-//     fontSize: 16,
-//   },
-//   buttonContainer: {
-//     flexDirection: 'row',
-//     justifyContent: 'space-between',
-//     alignItems: 'center',
-//     padding: 20,
-//     backgroundColor: '#96b885',
-//   },
-//   button: {
-//     padding: 10,
-//     borderRadius: 20,
-//     borderWidth: 2,
-//     borderColor: '#ffffff',
-//     backgroundColor: 'transparent',
-//   },
-//   buttonText: {
-//     fontSize: 16,
-//     color: '#E6E2D3',
-//     textAlign: 'center',
-//   },
-// });
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 36,
+    textAlign: 'center',
+    marginTop: 20,
+  },
+  profilePicture: {
+    width: 150,
+    height: 150,
+    borderRadius: 75,
+    backgroundColor: '#96b885',
+    alignSelf: 'center',
+    marginVertical: 50,
+  },
+  profileInfo: {
+    alignItems: 'center',
+    marginBottom: 30,
+  },
+  name: {
+    fontSize: 24,
+  },
+  school: {
+    fontSize: 16,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: '#96b885',
+  },
+  button: {
+    padding: 10,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderColor: '#ffffff',
+    backgroundColor: 'transparent',
+  },
+  buttonText: {
+    fontSize: 16,
+    color: '#E6E2D3',
+    textAlign: 'center',
+  },
+});
 
 export default StudentProfile;
