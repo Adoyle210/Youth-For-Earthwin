@@ -3,7 +3,7 @@ import { styles } from 'react-native';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 
-const ProjectApprovalPage = () =>{
+const ProjectApprovalScreen = () =>{
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -103,6 +103,6 @@ const styles = StyleSheet.create({
 
 });
 
-export default ProjectApprovalPage;
+export default ProjectApprovalScreen;
 
 
