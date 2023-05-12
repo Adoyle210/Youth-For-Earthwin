@@ -7,13 +7,15 @@ const StudentProfile = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Student Profile Page</Text>
+      {/* <Text style={styles.title}>Student Profile Page</Text> */}
       {/* <TouchableOpacity onPress={() => setProfilePicture(require('./new-profile-picture.jpg'))}>
         <Image source={profilePicture} style={styles.profilePicture} />
       </TouchableOpacity> */}
+      <View style={styles.profilePicture}>
+      </View>
       <View style={styles.profileInfo}>
-        <Text style={styles.name}>Student Name</Text>
-        <Text style={styles.school}>School Name</Text>
+        <Text style={styles.name}>Student Name Goes Here</Text>
+        <Text style={styles.school}>School Name Goes Here</Text>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button}>
@@ -56,10 +58,10 @@ const styles = StyleSheet.create({
   profilePicture: {
     width: 150,
     height: 150,
-    borderRadius: 75,
+    borderRadius: 90,
     backgroundColor: '#96b885',
     alignSelf: 'center',
-    marginVertical: 50,
+    marginVertical: 20,
   },
   profileInfo: {
     alignItems: 'center',
