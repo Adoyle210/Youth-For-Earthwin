@@ -1,6 +1,5 @@
 # Youth For Earthwin
 
-[![GitHub contributors](https://img.shields.io/github/contributors/Adoyle210/Youth-For-Earthwin.svg)](https://github.com/Adoyle210/Youth-For-Earthwin/graphs/contributors)
 [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 [![supports iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)](https://github.com/expo/expo)
 [![supports Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)](https://github.com/expo/expo)
