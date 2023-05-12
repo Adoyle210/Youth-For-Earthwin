@@ -53,10 +53,9 @@ const Login = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 65, marginBottom: 10 }}>Earthwin</Text>
       <Image
-        source={{ uri: 'https://picsum.photos/200' }}
-        style={{ width: 200, height: 200, marginBottom: 10, borderRadius: 50 }}
+        source={require('../assets/earthwin_logo.jpeg')}
+        style={{ width: 350, height: 80, marginBottom: 20}}
       />
       <TextInput
         style={styles.inputBox}
