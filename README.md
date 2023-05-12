@@ -6,7 +6,9 @@
 
 ## Description
 
-Our application is a React Native project designed to promote an environmentally conscious lifestyle by reducing unnecessary car idling. This project was inspired by a group of high schoolers who took initiative in their school to promote no idling in school pickup/drop off areas. They successfully secured funding and permission from their school to put up no idling signs, and we are aiming to take their initiative to a wider audience through this app. The students were inspired by Earthwin, a non-profit organization that aims to inspire environmental consciousness in youth while building their leadership skills. We are working with Earthwin to develop this app that is a mini version of what the ultimate Earthwin app will be.
+Our application is a React Native project designed to promote an environmentally conscious lifestyle by reducing unnecessary car idling. This project was inspired by a group of high schoolers who took initiative in their school to promote no idling in school pickup/drop off areas. They successfully secured funding and permission from their school to put up no idling signs, and we are aiming to take their initiative to a wider audience through this app. 
+
+The students were inspired by Earthwin, a non-profit organization that aims to inspire environmental consciousness in youth while building their leadership skills. We are working with Earthwin to develop this app that is a mini version of what the ultimate Earthwin app will be.
 
 ## Getting Started
 
