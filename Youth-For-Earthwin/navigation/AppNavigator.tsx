@@ -10,6 +10,9 @@ import ProjectApprovalScreen from '../screens/ProjectApprovalScreen';
 import StudentProfile from '../screens/StudentProfile';
 import Idling1Screen from '../screens/IdlingProj/Idling1Screen';
 import Idling2Screen from '../screens/IdlingProj/Idling2Screen';
+import GatherGroup from '../screens/createproj/GatherGroup';
+import Funding from '../screens/createproj/Funding';
+import FinalStep from '../screens/createproj/FinalStep';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +28,9 @@ const AppNavigator = () => {
         <Stack.Screen name='Student Profile' component={StudentProfile} />
         <Stack.Screen name='Idling1' component={Idling1Screen} />
         <Stack.Screen name='Idling2' component={Idling2Screen} />
+        <Stack.Screen name='Gather Group' component={GatherGroup} />
+        <Stack.Screen name='Funding' component={Funding} />
+        <Stack.Screen name='Final Step' component={FinalStep} />
       </Stack.Navigator>
     </NavigationContainer>
   );

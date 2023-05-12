@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { TouchableOpacity, View, Text, StyleSheet, Image } from "react-native";
+import { TouchableOpacity, View, StyleSheet, Image } from "react-native";
 
 const Profile = () => {
     const navigation = useNavigation();

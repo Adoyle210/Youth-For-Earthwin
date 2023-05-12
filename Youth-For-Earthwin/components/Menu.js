@@ -12,12 +12,6 @@ const Menu = () => {
             <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Project Approval")}>
                 <Text> Project Approval </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Project Pitch")}>
-                <Text> Project Pitches </Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Login")}>
-                <Text> Login </Text>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Idling1")}>
                 <Text> Template Project </Text>
             </TouchableOpacity>

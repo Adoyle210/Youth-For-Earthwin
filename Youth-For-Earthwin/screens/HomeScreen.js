@@ -1,7 +1,7 @@
 import React from "react";
-import {View, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet, TouchableOpacity, Image} from "react-native";
 import Menu from '../components/Menu';
-import Profile from "../components/profile";
+import Profile from "../components/Profile";
 
 
 const HomeScreen = ({navigation}) => {
@@ -12,12 +12,27 @@ const HomeScreen = ({navigation}) => {
                     <Profile/>
                 </View>
                 <Text style={styles.mainHeader}>Home Screen</Text>
-                {/* <Button title="Go to Details" onPress={() => navigation.navigate('Details')}/>
-                <Button title="Go to Project Approval" onPress={() => navigation.navigate('Project Approval')}/>
-                <Button title="Go to Project Pitches" onPress={() => navigation.navigate('Project Pitch')}/>
-                <Button title="Go to Parent Profile" onPress={() => navigation.navigate('Parent Profile')}/>
-                <Button title="Go to Student Profile" onPress={() => navigation.navigate('Student Profile')}/>
-                <Button title="Go to Project Overview" onPress={() => navigation.navigate('Project Overview')}/> */}
+                <View style={styles.leftContainer}>
+                    <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Gather Group")}>
+                    <Image source={require('../assets/group.png')} style={styles.image}/>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.rightContainer}>
+                    <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Project Pitch")}>
+                    <Image source={require('../assets/project.png')} style={styles.image}/>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.leftContainer}>
+                    <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Funding")}>
+                    <Image source={require('../assets/funds.png')} style={styles.image}/>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.rightContainer}>
+                    <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Final Step")}>
+                    <Image source={require('../assets/flag.png')} style={styles.image}/>
+                    </TouchableOpacity>
+                </View>
+
             </View>
             <View style={styles.MenuStyle}>
                     <View style={styles.lineStyle}> </View>
@@ -63,6 +78,21 @@ const styles = StyleSheet.create({
     },
     ProfileStyle: {
         alignSelf: 'flex-end',
+    },
+    leftContainer: {
+        alignSelf: 'flex-start',
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    rightContainer: {
+        alignSelf: 'flex-end',
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    image: {
+        width: 100,
+        height: 100,
+        borderRadius: 200/2
     }
 });
 
