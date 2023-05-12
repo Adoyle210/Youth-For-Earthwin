@@ -1,12 +1,15 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, View, Text, StyleSheet, Image } from "react-native";
 
 function Idling1Screen() {
     const navigation = useNavigation();
     return (
       <View>
         <View style={styles.LeftBox}>
+            <TouchableOpacity style={styles.newIconContainer} onPress={() => navigation.navigate("Idling2")}>
+                <Image source={require('../../assets/calculator.png')} style={styles.newIcon}/>
+            </TouchableOpacity>
             <Text style={styles.ScreenTitle}>Details Screen</Text>
             <Text style={styles.SubTitle}>The First EarthWin Project</Text>
             <Text style={styles.TextStyle}>
@@ -230,6 +233,16 @@ const styles = StyleSheet.create({
     FiveBox5: {
         marginLeft: "60%",
     },
+    newIconContainer: {
+        position: 'absolute',
+        top: 10, 
+        right:10, 
+    },
+    newIcon: {
+        width: 100, // set your dimensions accordingly
+        height: 100,
+        resizeMode: 'contain'
+    },    
 })
 
 export default Idling1Screen;
