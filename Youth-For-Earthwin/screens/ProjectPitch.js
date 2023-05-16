@@ -1,15 +1,49 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import supabase from '../supabase';
+
 
 const ProjectPitch = () => {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [objectives, setObjectives] = useState('');
-  const [timeline, setTimeline] = useState('');
-  const [resources, setResources] = useState('');
+  const [formData, setFormData] = useState({
+    title: '',
+    description: '',
+    objectives: '',
+    timeline: '',
+    resources: '',
+  });
 
-  const handleSubmit = () => {
-    // Add code to submit form data here
+  const { title, description, objectives, timeline, resources } = formData;
+
+  const handleSubmit = async () => {
+    try {
+      // Save the form data to the "projects" table in Supabase
+      const { data, error } = await supabase.from('project_data').insert([
+        {
+          title,
+          description,
+          objectives,
+          timeline,
+          resources,
+        },
+      ]);
+      
+      if (error) {
+        console.error('Error saving form data:', error);
+      } else {
+        console.log('Form data saved successfully:', data);
+        // Add any additional logic you want to perform after saving the data
+      }
+    } catch (error) {
+      console.error('Error saving form data:', error);
+    }
+  };
+  
+
+  const handleChange = (key, value) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [key]: value,
+    }));
   };
 
   return (
@@ -21,7 +55,7 @@ const ProjectPitch = () => {
           style={styles.input}
           placeholder="Enter project title here"
           value={title}
-          onChangeText={(text) => setTitle(text)}
+          onChangeText={(text) => handleChange('title', text)}
         />
 
         <Text style={styles.label}>Description:</Text>
@@ -29,7 +63,7 @@ const ProjectPitch = () => {
           style={styles.input}
           placeholder="Enter project description here"
           value={description}
-          onChangeText={(text) => setDescription(text)}
+          onChangeText={(text) => handleChange('description', text)}
           multiline={true}
           numberOfLines={4}
         />
@@ -39,7 +73,7 @@ const ProjectPitch = () => {
           style={styles.input}
           placeholder="Enter project objectives here"
           value={objectives}
-          onChangeText={(text) => setObjectives(text)}
+          onChangeText={(text) => handleChange('objectives', text)}
           multiline={true}
           numberOfLines={4}
         />
@@ -49,7 +83,7 @@ const ProjectPitch = () => {
           style={styles.input}
           placeholder="Enter project timeline here"
           value={timeline}
-          onChangeText={(text) => setTimeline(text)}
+          onChangeText={(text) => handleChange('timeline', text)}
           multiline={true}
           numberOfLines={4}
         />
@@ -59,7 +93,7 @@ const ProjectPitch = () => {
           style={styles.input}
           placeholder="Enter project resources here"
           value={resources}
-          onChangeText={(text) => setResources(text)}
+          onChangeText={(text) => handleChange('resources', text)}
           multiline={true}
           numberOfLines={4}
         />
@@ -76,12 +110,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alighnItems: 'center',
+    alignItems: 'center',
     padding: 20,
   },
   title: {
     fontSize: 24,
-    alighnItems: 'center',
+    alignItems: 'center',
     fontWeight: 'bold',
     marginBottom: 20,
   },
