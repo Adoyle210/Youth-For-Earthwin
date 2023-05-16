@@ -13,6 +13,7 @@ import Idling2Screen from '../screens/IdlingProj/Idling2Screen';
 import GatherGroup from '../screens/createproj/GatherGroup';
 import Funding from '../screens/createproj/Funding';
 import FinalStep from '../screens/createproj/FinalStep';
+import FormConfirmation from '../components/FormConfirmation';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,7 @@ const AppNavigator = () => {
         <Stack.Screen name='Gather Group' component={GatherGroup} />
         <Stack.Screen name='Funding' component={Funding} />
         <Stack.Screen name='Final Step' component={FinalStep} />
+        <Stack.Screen name='Confirmation' component={FormConfirmation} />
       </Stack.Navigator>
     </NavigationContainer>
   );
