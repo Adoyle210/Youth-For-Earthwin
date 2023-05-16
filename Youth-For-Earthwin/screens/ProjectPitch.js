@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 import supabase from '../supabase';
+import { useNavigation } from '@react-navigation/native';
 
 
 const ProjectPitch = () => {
+  const navigation = useNavigation();
+
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -16,7 +19,6 @@ const ProjectPitch = () => {
 
   const handleSubmit = async () => {
     try {
-      // Save the form data to the "projects" table in Supabase
       const { data, error } = await supabase.from('project_data').insert([
         {
           title,
@@ -26,12 +28,12 @@ const ProjectPitch = () => {
           resources,
         },
       ]);
-      
+  
       if (error) {
         console.error('Error saving form data:', error);
       } else {
         console.log('Form data saved successfully:', data);
-        // Add any additional logic you want to perform after saving the data
+        navigation.navigate('Confirmation');
       }
     } catch (error) {
       console.error('Error saving form data:', error);
