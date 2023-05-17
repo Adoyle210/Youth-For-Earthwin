@@ -6,9 +6,6 @@ const Menu = () => {
     const navigation = useNavigation();
     return (
         <View style={styles.menuContainer}>
-            <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Details")}>
-                <Text> Details </Text>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Project Approval")}>
                 <Text> Project Approval </Text>
             </TouchableOpacity>
