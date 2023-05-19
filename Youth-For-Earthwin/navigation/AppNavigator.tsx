@@ -13,26 +13,36 @@ import GatherGroup from '../screens/createproj/GatherGroup';
 import Funding from '../screens/createproj/Funding';
 import FinalStep from '../screens/createproj/FinalStep';
 import FormConfirmation from '../components/FormConfirmation';
+import { View, Image } from 'react-native';
 
 const Stack = createStackNavigator();
 
+function NavLogo() {
+  return (
+    <Image
+          source={require('../assets/earthwin_logo.jpeg')}
+          style={{ width: 225, height: 52, marginBottom: 1, marginTop: 10, alignSelf: 'center', }}
+        />
+  );
+}
+
 const AppNavigator = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Project Pitch" component={ProjectPitch} />
-        <Stack.Screen name="Project Approval" component={ProjectApprovalScreen} />
-        <Stack.Screen name='Student Profile' component={StudentProfile} />
-        <Stack.Screen name='Idling1' component={Idling1Screen} />
-        <Stack.Screen name='Idling2' component={Idling2Screen} />
-        <Stack.Screen name='Gather Group' component={GatherGroup} />
-        <Stack.Screen name='Funding' component={Funding} />
-        <Stack.Screen name='Final Step' component={FinalStep} />
-        <Stack.Screen name='Confirmation' component={FormConfirmation} />
-      </Stack.Navigator>
-    </NavigationContainer>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Login">
+          <Stack.Screen name="Login" component={Login} options={{ headerTitle: (props:any) => <NavLogo {...props} />, headerTitleAlign: 'center' }} />
+          <Stack.Screen name="Home" component={HomeScreen} options={{ headerTitle: (props:any) => <NavLogo {...props} />, headerTitleAlign: 'center' }} />
+          <Stack.Screen name="Project Pitch" component={ProjectPitch} />
+          <Stack.Screen name="Project Approval" component={ProjectApprovalScreen} />
+          <Stack.Screen name='Student Profile' component={StudentProfile} />
+          <Stack.Screen name='Idling1' component={Idling1Screen} />
+          <Stack.Screen name='Idling2' component={Idling2Screen} />
+          <Stack.Screen name='Gather Group' component={GatherGroup} />
+          <Stack.Screen name='Funding' component={Funding} />
+          <Stack.Screen name='Final Step' component={FinalStep} />
+          <Stack.Screen name='Confirmation' component={FormConfirmation} />
+        </Stack.Navigator>
+      </NavigationContainer>
   );
 };
 

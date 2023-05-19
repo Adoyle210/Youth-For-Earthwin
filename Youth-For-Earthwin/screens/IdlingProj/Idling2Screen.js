@@ -136,10 +136,10 @@ function Idling2Screen() {
 
         if(unit == "1"){
             count = count * (newval/60) * 0.008887;
-            setResult(count + "Metric Tonnes of CO2 Produced");
+            setResult(count + " Metric Tonnes of CO2 Produced");
         } else {
             count = count * (newval/60);
-            setResult(count + "Gallons of Gasoline Wasted");
+            setResult(count + " Gallons of Gasoline Wasted");
         }
     }
 
