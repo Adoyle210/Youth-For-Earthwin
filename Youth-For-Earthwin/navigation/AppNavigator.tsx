@@ -41,7 +41,7 @@ const AppNavigator = () => {
           <Stack.Screen name='Gather Group' component={GatherGroup} />
           <Stack.Screen name='Funding' component={Funding} />
           <Stack.Screen name='Final Step' component={FinalStep} />
-          <Stack.Screen name='Confirmation' component={FormConfirmation} />
+          <Stack.Screen name='FormConfirmation' component={FormConfirmation} />
           <Stack.Screen name='ProjectOverview' component={ProjectOverview} />
         </Stack.Navigator>
       </NavigationContainer>
