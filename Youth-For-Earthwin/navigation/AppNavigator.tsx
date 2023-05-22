@@ -31,7 +31,7 @@ const AppNavigator = () => {
   return (
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Login">
-          <Stack.Screen name="Login" component={Login} options={{ headerTitle: (props:any) => <NavLogo {...props} />, headerTitleAlign: 'center' }} />
+          <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Home" component={HomeScreen} options={{ headerTitle: (props:any) => <NavLogo {...props} />, headerTitleAlign: 'center' }} />
           <Stack.Screen name="Project Pitch" component={ProjectPitch} />
           <Stack.Screen name="Project Approval" component={ProjectApprovalScreen} />
