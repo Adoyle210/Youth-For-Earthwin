@@ -13,6 +13,7 @@ import GatherGroup from '../screens/createproj/GatherGroup';
 import Funding from '../screens/createproj/Funding';
 import FinalStep from '../screens/createproj/FinalStep';
 import FormConfirmation from '../components/FormConfirmation';
+import ProjectOverview from '../components/ProjectOverview';
 import { View, Image } from 'react-native';
 
 const Stack = createStackNavigator();
@@ -41,6 +42,7 @@ const AppNavigator = () => {
           <Stack.Screen name='Funding' component={Funding} />
           <Stack.Screen name='Final Step' component={FinalStep} />
           <Stack.Screen name='Confirmation' component={FormConfirmation} />
+          <Stack.Screen name='ProjectOverview' component={ProjectOverview} />
         </Stack.Navigator>
       </NavigationContainer>
   );
