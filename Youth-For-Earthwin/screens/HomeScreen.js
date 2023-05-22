@@ -35,11 +35,11 @@ const HomeScreen = ({navigation}) => {
 
             </View>
             <View style={styles.MenuStyle}>
-                    <View style={styles.lineStyle}> </View>
+                    {/* <View style={styles.lineStyle}> </View> */}
                     <Menu/>
-                    <View style={[styles.lineStyle, {
+                    {/* <View style={[styles.lineStyle, {
                         marginVerical: 20,
-                    }]}> </View>
+                    }]}> </View> */}
             </View>
          </View>
     );
