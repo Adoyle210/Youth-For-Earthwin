@@ -33,7 +33,7 @@ const ProjectPitch = () => {
         console.error('Error saving form data:', error);
       } else {
         console.log('Form data saved successfully:', data);
-        navigation.navigate('Confirmation');
+        navigation.navigate('FormConfirmation');
       }
     } catch (error) {
       console.error('Error saving form data:', error);

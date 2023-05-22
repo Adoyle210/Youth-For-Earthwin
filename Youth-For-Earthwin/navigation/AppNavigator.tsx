@@ -13,6 +13,7 @@ import GatherGroup from '../screens/createproj/GatherGroup';
 import Funding from '../screens/createproj/Funding';
 import FinalStep from '../screens/createproj/FinalStep';
 import FormConfirmation from '../components/FormConfirmation';
+import ProjectOverview from '../components/ProjectOverview';
 import { View, Image } from 'react-native';
 
 const Stack = createStackNavigator();
@@ -30,7 +31,7 @@ const AppNavigator = () => {
   return (
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Login">
-          <Stack.Screen name="Login" component={Login} options={{ headerTitle: (props:any) => <NavLogo {...props} />, headerTitleAlign: 'center' }} />
+          <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Home" component={HomeScreen} options={{ headerTitle: (props:any) => <NavLogo {...props} />, headerTitleAlign: 'center' }} />
           <Stack.Screen name="Project Pitch" component={ProjectPitch} />
           <Stack.Screen name="Project Approval" component={ProjectApprovalScreen} />
@@ -40,7 +41,8 @@ const AppNavigator = () => {
           <Stack.Screen name='Gather Group' component={GatherGroup} />
           <Stack.Screen name='Funding' component={Funding} />
           <Stack.Screen name='Final Step' component={FinalStep} />
-          <Stack.Screen name='Confirmation' component={FormConfirmation} />
+          <Stack.Screen name='FormConfirmation' component={FormConfirmation} />
+          <Stack.Screen name='ProjectOverview' component={ProjectOverview} />
         </Stack.Navigator>
       </NavigationContainer>
   );

@@ -11,7 +11,6 @@ const HomeScreen = ({navigation}) => {
                 <View style={styles.ProfileStyle}>
                     <Profile/>
                 </View>
-                <Text style={styles.mainHeader}>Home Screen</Text>
                 <View style={styles.leftContainer}>
                     <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Gather Group")}>
                     <Image source={require('../assets/group.png')} style={styles.image}/>
