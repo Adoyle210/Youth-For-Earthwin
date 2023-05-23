@@ -13,32 +13,36 @@ const HomeScreen = ({navigation}) => {
                 </View>
                 <View style={styles.leftContainer}>
                     <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Gather Group")}>
-                    <Image source={require('../assets/group.png')} style={styles.image}/>
+                        <Image source={require('../assets/group.png')} style={styles.image}/>
                     </TouchableOpacity>
+                    <Text>Gather Group</Text>  
                 </View>
                 <View style={styles.rightContainer}>
                     <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Project Pitch")}>
-                    <Image source={require('../assets/project.png')} style={styles.image}/>
+                        <Image source={require('../assets/project.png')} style={styles.image}/>
                     </TouchableOpacity>
+                    <Text>Project Pitch</Text>  
                 </View>
                 <View style={styles.leftContainer}>
                     <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Funding")}>
-                    <Image source={require('../assets/funds.png')} style={styles.image}/>
+                        <Image source={require('../assets/funds.png')} style={styles.image}/>
                     </TouchableOpacity>
+                    <Text>Funding</Text> 
                 </View>
                 <View style={styles.rightContainer}>
                     <TouchableOpacity style={styles.buttonStyle} onPress={() => navigation.navigate("Final Step")}>
-                    <Image source={require('../assets/flag.png')} style={styles.image}/>
+                        <Image source={require('../assets/flag.png')} style={styles.image}/>
                     </TouchableOpacity>
+                    <Text>Final Step</Text>  
                 </View>
 
             </View>
             <View style={styles.MenuStyle}>
-                    <View style={styles.lineStyle}> </View>
-                    <Menu/>
-                    <View style={[styles.lineStyle, {
-                        marginVerical: 20,
-                    }]}> </View>
+                <View style={styles.lineStyle}> </View>
+                <Menu/>
+                <View style={[styles.lineStyle, {
+                    marginVerical: 20,
+                }]}> </View>
             </View>
          </View>
     );
