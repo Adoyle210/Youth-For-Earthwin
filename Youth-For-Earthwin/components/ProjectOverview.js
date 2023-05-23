@@ -14,13 +14,11 @@ const ProjectOverview = () => {
 
   const fetchProjects = async () => {
     try {
-      // Fetch project data from the database using Supabase
       const { data, error } = await supabase.from('project_data').select('title');
 
       if (error) {
         console.error('Error fetching projects:', error);
       } else {
-        // Update the state with the fetched project data
         setProjects(data);
       }
     } catch (error) {
@@ -29,12 +27,11 @@ const ProjectOverview = () => {
   };
 
   const handleNewProject = () => {
-    navigation.navigate('ProjectPitch'); // Navigate back to the ProjectPitch screen
+    navigation.navigate('Project Pitch');
   };
 
   const handleItemPress = async (item) => {
     try {
-      // Fetch the project details from the database using Supabase
       const { data, error } = await supabase
         .from('project_data')
         .select('*')
@@ -44,9 +41,7 @@ const ProjectOverview = () => {
       if (error) {
         console.error('Error fetching project details:', error);
       } else {
-        // Display the project details
         console.log('Project Details:', data);
-        // You can set the project details in the component's state or display them directly in the UI
       }
     } catch (error) {
       console.error('Error fetching project details:', error);
